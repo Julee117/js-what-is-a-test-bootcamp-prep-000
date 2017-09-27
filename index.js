@@ -18,4 +18,11 @@ describe('Name', () => {
       })
     })
 
+    describe("Message", () => {
+        it("gives the name and height", () => {
+          expect(message).toInclude(index.name)
+          expect(message).toInclude(index.height)
+        })
+      })
+
 module.exports = {name, height, message}
